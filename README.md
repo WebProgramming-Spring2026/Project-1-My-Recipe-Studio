@@ -21,7 +21,7 @@
 
 ## Key Features:
 
-- ****: 
-- ****: 
-- ****: 
-- ****:
+- **Recipe Card Animation**: Recipe cards will flip, scale, or slide when users hover over or click them, providing visual feedback.
+- **Ingredient Highlighting**: When users hover over an ingredient, it will be highlighted with a CSS hover effect.
+- **Step-by-Step Instructions**: Instructions will be organized in a step-by-step manner using CSS Grid or Flexbox.
+- **Step-by-Step Progression**: Each step can change state (inactive, active, completed). Completed steps will visually indicate progress. Users can clearly follow their place in the recipe.
