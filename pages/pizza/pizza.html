@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Recipe Microsite - Pizza Page</title>
+    <link rel="icon" type="image/x-icon" href="../../images/pizza/icon.png" />
+    <link rel="stylesheet" href="../../styles/pizza/pizzastyle.css" />
+  </head>
+  <body>
+    <div class="top-banner">
+      <div id="logo">
+        <img src="../../images/pizza/icon.png" alt="img-pizza" />
+      </div>
+      <div id="title">
+        <h1>PIZZA RECIPE</h1>
+      </div>
+      <div id="home-page">
+        <a href="../homePage/index.html">
+          <img src="../../images/pizza/home-icon.png" alt="home-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="recipe-stuff">
+      <div class="ingredient-and-animation">
+        <div class="animation-zone">
+          <div class="step-button-zone">
+            <ul class="content__cookies-button-list">
+              <li>
+                <a href="#recipe1-step1" class="content__cookies-button">Step 1</a>
+              </li>
+              <li>
+                <a href="#recipe1-step2" class="content__cookies-button">Step 2</a>
+              </li>
+              <li>
+                <a href="#recipe1-step3" class="content__cookies-button">Step 3</a>
+              </li>
+              <li>
+                <a href="#recipe1-step4" class="content__cookies-button">Step 4</a>
+              </li>
+              <li>
+                <a href="#recipe1-step5" class="content__cookies-button">Step 5</a>
+              </li>
+              <li>
+                <a href="#recipe1-step6" class="content__cookies-button">Step 6</a>
+              </li>
+            </ul>
+          </div>
+          <div class="explanation-zone">
+            <div id="recipe1-step1" class="step-explanation">
+              <div class="explanation">
+                <div class="recipe-step">
+                  <span class="step-title">Make the Pizza Dough</span><br />
+                  In a large bowl, combine warm water, yeast, and sugar. Let it sit for 5 minutes until foamy. Add flour, salt, and olive oil. Mix until a dough forms, then knead for 5-7 minutes until smooth and elastic.
+                </div>
+                <div class="animation-dough">
+                  <img
+                    id="bowl"
+                    src="../../images/pizza/bowl.png"
+                    alt="bowl"
+                  />
+                  <div class="dough-animation">
+                    <div id="flour" class="ingredient"></div>
+                    <div id="salt" class="ingredient-salt"></div>
+                    <div id="yeast" class="ingredient-salt"></div>
+                    <div id="sugar" class="ingredient-salt"></div>
+                    <div id="oil" class="ingredient-butter"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="recipe1-step2" class="step-explanation">
+              <div class="explanation">
+                <div class="recipe-step">
+                  <span class="step-title">Let the Dough Rise</span><br />
+                  Place the dough in a greased bowl, cover with a damp towel, and let it rise in a warm place for 1-1.5 hours until doubled in size.
+                </div>
+                <div class="animation-dough">
+                  <div>
+                    <img
+                      class="base-element"
+                      src="../../images/pizza/dough.png"
+                      alt="dough"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="recipe1-step3" class="step-explanation">
+              <div class="explanation">
+                <div class="recipe-step">
+                  <span class="step-title">Shape and Add Sauce</span><br />
+                  Punch down the dough and roll it out into a 12-inch circle. Transfer to a pizza pan or baking sheet. Spread pizza sauce evenly over the dough, leaving a 1-inch border for the crust.
+                </div>
+                <div class="animation1">
+                  <div class="pizza-base">
+                    <div class="sauce-layer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="recipe1-step4" class="step-explanation">
+              <div class="explanation">
+                <div class="recipe-step">
+                  <span class="step-title">Add Cheese</span><br />
+                  Sprinkle mozzarella cheese evenly over the sauce, covering the entire surface.
+                </div>
+                <div class="animation1">
+                  <div class="pizza-base">
+                    <div class="sauce-layer"></div>
+                    <div class="cheese-layer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="recipe1-step5" class="step-explanation">
+              <div class="explanation">
+                <div class="recipe-step">
+                  <span class="step-title">Add Pepperoni</span><br />
+                  Arrange pepperoni slices evenly over the cheese. You can also add any other toppings you like at this stage.
+                </div>
+                <div class="animation1">
+                  <div class="pizza-base">
+                    <div class="sauce-layer"></div>
+                    <div class="cheese-layer"></div>
+                    <div class="pepperoni-container">
+                      <div class="pepperoni"></div>
+                      <div class="pepperoni"></div>
+                      <div class="pepperoni"></div>
+                      <div class="pepperoni"></div>
+                      <div class="pepperoni"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="recipe1-step6" class="step-explanation">
+              <div class="explanation">
+                <div class="recipe-step">
+                  <span class="step-title">Bake the Pizza</span><br />
+                  Preheat oven to 475°F (245°C). Bake the pizza for 12-15 minutes until the crust is golden and the cheese is bubbly and slightly browned. Let it cool for 5 minutes before slicing.
+                </div>
+                <div class="animation2">
+                  <div class="animation-oven">
+                    <img id="oven" src="../../images/pizza/oven.png" alt="oven" />
+                    <img id="pizza-in-oven" src="../../images/pizza/baked-pizza.png" alt="pizza in oven" />
+                    <div id="heat"></div>
+                  </div>
+                  <div id="timer-container">
+                    <img id="timer" src="../../images/pizza/timer.png" alt="timer" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-zone">
+          <div class="ingredient-set-title ingredient-set">
+            <span>Ingredients</span>
+          </div>
+          <div class="ingredient-set ingredient-step1">
+            1 cup warm water (110°F)
+          </div>
+          <div class="ingredient-set ingredient-step1">
+            1 packet (2 1/4 tsp) active dry yeast
+          </div>
+          <div class="ingredient-set ingredient-step1">1 teaspoon sugar</div>
+          <div class="ingredient-set ingredient-step1">
+            2 1/2 cups all-purpose flour
+          </div>
+          <div class="ingredient-set ingredient-step1">2 tablespoons olive oil</div>
+          <div class="ingredient-set ingredient-step1">1 teaspoon salt</div>
+          <div class="ingredient-set ingredient-step3">1/2 cup pizza sauce</div>
+          <div class="ingredient-set ingredient-step4">
+            2 cups shredded mozzarella cheese
+          </div>
+          <div class="ingredient-set ingredient-step5">20-25 pepperoni slices</div>
+          <div class="ingredient-set ingredient-step5">
+            Optional: Italian seasoning, garlic powder
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <p id="htmlvalidator">
+          <a href="http://validator.w3.org/check/referer">
+            <img
+              src="../../images/validatedHTML.png"
+              alt="Valid XHTML 1.0!"
+              height="31"
+              width="88"
+            />
+          </a>
+        </p>
+        <p id="cssvalidator">
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img
+              style="border: 0; width: 88px; height: 31px"
+              src="../../images/validatedCSS.png"
+              alt="Valid CSS!"
+            />
+          </a>
+        </p>
+        <p>Copyright &copy; Fall 2025</p>
+        <p>Georgia State University - Web Programming</p>
+        <p>Sophie Nguyen - Cristofer Herrera-Mejia - Karni Rathod</p>
+      </div>
+    </div>
+  </body>
+</html>
