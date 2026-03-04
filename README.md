@@ -6,7 +6,7 @@
 
 ## Materials:
 
-- [Proposal]()
+- [Proposal](https://drive.google.com/file/d/1v6heZXCmsAmWFTyyD_brnNsbh5akcSkv/view?usp=sharing)
 - [Slides]()
 - [Website]()
 - [Demo]()
