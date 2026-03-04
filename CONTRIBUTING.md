@@ -33,6 +33,6 @@ If you have any questions or need further assistance, feel free to reach out to 
 
 ## License
 
-By contributing to My Recipe Studio, you agree that your contributions will be licensed under the Apache License. See the [LICENSE]() file for more details.
+By contributing to My Recipe Studio, you agree that your contributions will be licensed under the Apache License. See the [LICENSE](https://github.com/WebProgramming-Spring2026/Project-1-My-Recipe-Studio/blob/main/LICENSE) file for more details.
 
 Thank you for your interest in contributing to My Recipe Studio! We appreciate your help in making this project better for everyone.
