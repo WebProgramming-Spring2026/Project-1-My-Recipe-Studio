@@ -1,0 +1,623 @@
+:root {
+  --color-pink: #ffadad;
+  --color-peach: #ffd6a5;
+  --color-yellow: #fed2eb;
+  --color-green: #caffbf;
+  --color-white: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background: url(../../images/cookies/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ul,
+li {
+  list-style: none;
+}
+span {
+  font-weight: bold;
+}
+.top-banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  margin-bottom: 2em;
+  padding: 0;
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 5px 1px var(--color-yellow);
+}
+
+#home-page {
+  width: 60px;
+  height: 60px;
+  margin-right: 2rem;
+}
+
+#home-page > a {
+  display: inline-block;
+  border: 2px solid var(--color-pink);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+#home-page > a > img {
+  width: 100%;
+}
+
+#logo {
+  width: 100px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--color-pink);
+}
+
+#logo > img {
+  width: 80%;
+}
+
+#title {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: var(--color-pink);
+  justify-content: center;
+  align-items: center;
+}
+
+#title > h1 {
+  letter-spacing: 15px;
+  word-spacing: 30px;
+}
+
+.recipe-stuff {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.recipe-title {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.recipe-description {
+  height: 10%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ingredient-and-animation {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ingredient-zone {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.animation-zone {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-yellow);
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-button-zone {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../images/cookies/background.jpg);
+}
+
+.content__cookies-button {
+  border: 2px solid var(--color-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem 2rem;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content__cookies-button-list {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.explanation-zone {
+  height: 85%;
+  display: flex;
+}
+
+.step-explanation:target {
+  display: block;
+  opacity: 1;
+}
+
+.step-explanation {
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+  background-color: var(--color-yellow);
+}
+
+.explanation {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  animation: fadeInLeft 1s;
+}
+
+.animation2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.animation1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.step-explanation:target .explanation {
+  opacity: 1;
+}
+
+.step-explanation:target .animation {
+  opacity: 1;
+  animation: appearSlowly 2s;
+}
+@keyframes appearSlowly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cookies {
+  width: 200px;
+  height: 200px;
+  background-color: var(--color-peach);
+  border: 2px solid #333;
+  border-radius: 50%;
+  opacity: 1;
+  position: relative;
+  margin: 5px;
+}
+
+.content__cookies-button:hover {
+  background-color: var(--color-green);
+  color: black;
+}
+
+.choco {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #964b00;
+  border-radius: 50%;
+  opacity: 0;
+  animation: placeChoco 3s ease-in-out infinite;
+}
+
+.choco1 {
+  top: 15%;
+  left: 45%;
+}
+.choco2 {
+  top: 40%;
+  left: 20%;
+}
+.choco3 {
+  top: 60%;
+  left: 70%;
+}
+.choco4 {
+  top: 40%;
+  left: 70%;
+}
+.choco5 {
+  top: 50%;
+  left: 50%;
+}
+.choco6 {
+  top: 70%;
+  left: 50%;
+}
+.choco7 {
+  top: 20%;
+  left: 60%;
+}
+.choco8 {
+  top: 65%;
+  left: 20%;
+}
+.choco9 {
+  top: 20%;
+  left: 30%;
+}
+.choco10 {
+  top: 40%;
+  left: 40%;
+}
+@keyframes placeChoco {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(10px, 10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(10px, -10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+#splat {
+  z-index: 1;
+  position: relative;
+  width: auto;
+  height: auto;
+  perspective: 100px;
+  animation: cookies_spin 35s infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+@keyframes bob {
+  from {
+    transform: translateY(0px);
+    transform: rotate(5deg);
+  }
+  to {
+    transform: translateY(25px);
+    transform: rotate(20deg);
+  }
+}
+@keyframes cookies_spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.animation-oven {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#oven {
+  position: relative;
+  height: 360px;
+  z-index: 4;
+}
+#cookies {
+  position: absolute;
+  height: 100px;
+  transform: perspective(70px) rotatex(45deg);
+  z-index: 2;
+}
+#rack {
+  z-index: 1;
+  position: absolute;
+  height: 190px;
+  width: 190px;
+}
+#heat {
+  z-index: 3;
+  position: absolute;
+  background-color: rgb(255, 114, 58);
+  height: 250px;
+  width: 200px;
+  opacity: 40%;
+  animation: oven-heat 1s infinite;
+  animation-direction: alternate-reverse;
+}
+#timer {
+  position: relative;
+
+  width: 50%;
+  animation: timer-flash 1s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes oven-heat {
+  70% {
+    background-color: rgb(255, 114, 58);
+  }
+  100% {
+    background-color: rgb(255, 68, 0);
+  }
+}
+@keyframes timer-flash {
+  70% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ingredient-and-animation {
+    flex-direction: column;
+  }
+  .animation-zone,
+  .ingredient-zone {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .step-explanation a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.recipe-step {
+  width: 90%;
+  margin: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 12pt;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0rem 2rem;
+  line-height: 1.6;
+}
+
+.recipe-step:hover {
+  background-color: var(--color-white);
+  color: black;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+.recipe-step:nth-child(odd) {
+  animation: fadeInLeft 1s;
+}
+
+.recipe-step:nth-child(even) {
+  animation: fadeInRight 1s;
+}
+.animation-dough {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.ingredient {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-peach);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 -100px;
+  animation: ingredient-fall 2s ease-out infinite;
+}
+
+.ingredient-butter {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 -100px;
+  animation: ingredient-fall 2s ease-out infinite;
+}
+
+.ingredient-salt {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 -100px;
+  animation: ingredient-fall 2s ease-out infinite;
+}
+
+.ingredient-set-title {
+  background: url(../../images/cookies/background2.jpg);
+  color: var(--color-pink);
+  font-size: 30px;
+  text-shadow: 2px 2px var(--color-yellow);
+}
+
+.ingredient-set {
+  flex-grow: 1;
+  margin-bottom: 1px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ingredient-set:hover {
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
+.recipe-stuff:has(#recipe1-step1 .recipe-step:hover) .ingredient-1 {
+  background-color: var(--color-green);
+}
+
+.recipe-stuff:has(#recipe1-step3 .recipe-step:hover) .ingredient-3 {
+  background-color: var(--color-green);
+}
+
+.ingredient-set-title:hover {
+  color: var(--color-peach);
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+@keyframes ingredient-fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+#bowl {
+  height: auto;
+  width: auto;
+  max-width: 170px;
+  position: relative;
+  margin-top: 5em;
+}
+.dough-animation {
+  margin-top: 3em;
+}
+
+#pin {
+  height: 175px;
+  width: 175px;
+  max-width: 170px;
+  animation: roll-pin 2s linear infinite;
+  position: absolute;
+}
+
+.base-element {
+  width: 175px;
+  height: 175px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.base-element:hover {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes roll-pin {
+  0% {
+    transform: translateX(-10px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(20deg);
+  }
+  100% {
+    transform: translateX(-10px) rotate(0deg);
+  }
+}
+
+.step-title {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.blank-space {
+  width: 100%;
+  height: 8vh;
+  margin: 1em 0;
+  background-color: #fff;
+  position: relative;
+  background: url(./background.jpg);
+}
+
+#copyright {
+  padding: 0.3rem;
+  margin-top: 6rem;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+}
