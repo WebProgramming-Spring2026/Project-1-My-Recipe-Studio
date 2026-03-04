@@ -396,9 +396,6 @@ span {
   position: absolute;
   height: 150px;
   width: 150px;
-  border-radius: 50%;
-  background-color: var(--color-cheese);
-  border: 5px solid #8d6e63;
   z-index: 2;
 }
 
@@ -426,8 +423,6 @@ span {
   animation: timer-flash 1s infinite;
   animation-direction: alternate-reverse;
 }
-
-
 
 #timer-display {
   font-size: 32px;
@@ -638,6 +633,13 @@ span {
   display: inline-block;
   font-size: 30px;
   margin-bottom: 1rem;
+}
+
+#rack {
+  z-index: 1;
+  position: absolute;
+  height: 190px;
+  width: 190px;
 }
 
 #copyright {
