@@ -7,7 +7,7 @@
 ## Materials:
 
 - [Proposal](https://drive.google.com/file/d/1v6heZXCmsAmWFTyyD_brnNsbh5akcSkv/view?usp=sharing)
-- [Slides]()
+- [Slides](https://docs.google.com/presentation/d/1w97ffh4lgXTJ56pWSdtCxC-C3a5PjeJE/edit?usp=sharing&ouid=115868471783120857845&rtpof=true&sd=true)
 - [Website]()
 - [Demo]()
 
