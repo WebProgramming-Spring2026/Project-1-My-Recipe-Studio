@@ -2,11 +2,11 @@
 
 ## Scope
 
-This security policy applies to all aspects of the My Recipe Studio, including but not limited to the codebase, documentation, and website.
+This security policy applies to all aspects of My Recipe Studio, including but not limited to the codebase, documentation, and website.
 
 ## Reporting a Vulnerability
 
-If users discover a security vulnerability in this project, please report it by [creating an issue]() in the issue tracker. Include as much detail as possible about the vulnerability and steps to reproduce it.
+If users discover a security vulnerability in this project, please report it by [creating an issue](https://github.com/WebProgramming-Spring2026/Project-1-My-Recipe-Studio/issues) in the issue tracker. Include as much detail as possible about the vulnerability and steps to reproduce it.
 
 ### Expectations
 

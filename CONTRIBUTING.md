@@ -1,6 +1,6 @@
 # Contributing to My Recipe Studio
 
-Welcome to the My Recipe Studio! We're thrilled to have you here. Your contributions are essential to making this project successful.
+Welcome to My Recipe Studio! We're thrilled to have you here. Your contributions are essential to making this project successful.
 
 ## How to Contribute
 
@@ -25,7 +25,7 @@ Before submitting a PR, please ensure that your code adheres to the following gu
 
 ## Reporting Bugs
 
-If you encounter any bugs or issues while using My Recipe Studio, please report them by [creating an issue]() on GitHub. Make sure to include as much detail as possible, including steps to reproduce the issue.
+If you encounter any bugs or issues while using My Recipe Studio, please report them by [creating an issue](https://github.com/WebProgramming-Spring2026/Project-1-My-Recipe-Studio/issues) on GitHub. Make sure to include as much detail as possible, including steps to reproduce the issue.
 
 ## Contact
 
