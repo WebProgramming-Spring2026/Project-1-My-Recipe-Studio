@@ -134,11 +134,13 @@ span {
 }
 
 .step-button-zone {
-  height: 15%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: url(../../images/pizza/background.jpg);
+  padding-bottom: 1rem;
 }
 
 .content__cookies-button {
@@ -165,8 +167,76 @@ span {
   margin: 1em;
 }
 
+.chapter-progress {
+  width: 95%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-yellow);
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.chapter-progress__title {
+  font-size: 1.1rem;
+  color: var(--color-red);
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+
+.chapter-progress__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.chapter-progress__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.chapter-progress__step {
+  min-width: 56px;
+  font-weight: bold;
+  color: black;
+}
+
+.chapter-progress__states {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.chapter-progress__states input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.state {
+  border: 1px solid var(--color-red);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  background-color: var(--color-white);
+  color: black;
+}
+
+.chapter-progress__states input[type="radio"]:checked + .state--ns {
+  background-color: var(--color-yellow);
+}
+
+.chapter-progress__states input[type="radio"]:checked + .state--ip {
+  background-color: #ff8409;
+}
+
+.chapter-progress__states input[type="radio"]:checked + .state--dn {
+  background-color: var(--color-orange);
+}
+
 .explanation-zone {
-  height: 85%;
+  height: auto;
+  min-height: 85%;
   display: flex;
 }
 
