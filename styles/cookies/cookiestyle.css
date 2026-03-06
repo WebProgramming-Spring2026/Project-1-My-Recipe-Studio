@@ -16,6 +16,7 @@ body {
   width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.6;
   background: url(../../images/cookies/background1.jpg);
   background-size: cover;
   background-position: center;
@@ -81,6 +82,7 @@ span {
 #title > h1 {
   letter-spacing: 15px;
   word-spacing: 30px;
+  text-shadow: 1px 1px var(--color-yellow);
 }
 
 .recipe-stuff {
@@ -177,6 +179,18 @@ span {
   color: var(--color-pink);
   margin-bottom: 0.6rem;
   text-align: left;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.chapter-progress__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 96px;
+  height: 3px;
+  background-color: var(--color-yellow);
 }
 
 .chapter-progress__list {
@@ -512,8 +526,15 @@ span {
   font-size: 12pt;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  padding: 0rem 2rem;
+  padding: 0.2rem 2rem 0.2rem 1.3rem;
   line-height: 1.6;
+  letter-spacing: 0.2px;
+  border-left: 6px solid var(--color-pink);
+}
+
+.recipe-step::first-letter {
+  color: var(--color-pink);
+  font-size: 1.4em;
 }
 
 .recipe-step:hover {
@@ -572,6 +593,7 @@ span {
   color: var(--color-pink);
   font-size: 30px;
   text-shadow: 2px 2px var(--color-yellow);
+  letter-spacing: 1px;
 }
 
 .ingredient-set {
@@ -581,6 +603,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.2px;
+  border-left: 5px solid var(--color-yellow);
 }
 .ingredient-set:hover {
   transform: scale(1.05);
@@ -672,6 +696,8 @@ span {
   display: inline-block;
   font-size: 30px;
   margin-bottom: 1rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 .blank-space {

@@ -24,6 +24,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  line-height: 1.7;
 }
 
 #header {
@@ -65,6 +66,7 @@ body {
   text-transform: uppercase;
   color: var(--color-pink);
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .header__link:hover {
@@ -76,6 +78,7 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   color: var(--color-pink);
+  letter-spacing: 1px;
 }
 
 #main {
@@ -84,6 +87,7 @@ body {
 
 #content {
   border: 2px solid var(--color-yellow);
+  border-left: 10px solid var(--color-pink);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +97,29 @@ body {
   line-height: 2;
   background-color: var(--color-white);
   box-shadow: 25px 25px 3px -10px var(--color-pink);
+  position: relative;
+  overflow: hidden;
+}
+
+#content::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-peach);
+}
+
+#content::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 28%;
+  width: 140px;
+  height: 10px;
+  background-color: var(--color-yellow);
 }
 
 #icon {
@@ -112,6 +139,28 @@ body {
 
 .content__group {
   margin-left: 3rem;
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+  position: relative;
+  z-index: 1;
+}
+
+.content__group::first-letter {
+  color: var(--color-pink);
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.content__group h2 {
+  color: var(--color-pink);
+  letter-spacing: 0.8px;
+  margin-top: 0.7rem;
+  margin-bottom: 0.25rem;
+}
+
+.content__group li {
+  margin-left: 1.1rem;
+  margin-bottom: 0.35rem;
 }
 
 .button-group {
@@ -129,6 +178,8 @@ body {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
+  letter-spacing: 0.6px;
+  font-weight: 600;
 }
 
 .btn:hover {
