@@ -435,6 +435,15 @@ span {
     transform: rotate(20deg);
   }
 }
+
+/* `@keyframes` is used in CSS to create animations by describing how an element should change over time.
+
+`from` is the starting point of the animation. Here, `transform: rotateZ(0deg);` means the element starts with no rotation.
+
+`to` is the ending point of the animation. transform: `rotateZ(360deg);` means the element rotates one full circle.
+
+`rotateZ()` rotates the element around the Z-axis, which makes it spin like a wheel on the screen. */
+
 @keyframes cookies_spin {
   from {
     transform: rotateZ(0deg);
@@ -501,6 +510,18 @@ span {
     opacity: 30%;
   }
 }
+
+/* This code uses a CSS media query to change the layout when the screen is 700px wide or smaller, which usually means phones or small tablets.
+
+`@media screen and (max-width: 700px)`
+This tells the browser to apply these styles only when the screen width is 700px or less.
+
+`.ingredient-and-animation { flex-direction: column; }`
+This changes the flexbox layout so the items are stacked vertically instead of side-by-side.
+
+`.animation-zone, .ingredient-zone { width: 100%; }`
+Both sections take the full width of the screen, so they fit nicely on smaller devices. */
+
 @media screen and (max-width: 700px) {
   .ingredient-and-animation {
     flex-direction: column;
@@ -624,6 +645,19 @@ span {
   transform: scale(1.1);
   border-radius: 10px;
 }
+
+/* It controls how an element moves and fades during the animation.
+
+0% (start of the animation):
+`transform: translateY(-100px);` moves the element 100px above its normal position, so it starts from the top.
+`opacity: 1;` means the element is fully visible.
+
+90% (near the end):
+`transform: translateY(0);` moves the element down to its normal position.
+`opacity: 0;` makes the element invisible.
+
+100% (end of the animation):
+The element stays in the same position and remains invisible. */
 
 @keyframes ingredient-fall {
   0% {
